@@ -1,13 +1,10 @@
 # Cat Feeder Stack (API Server + Raspberry Pi Client)
 
-이 저장소는 **FastAPI 기반 API 서버**와 **라즈베리파이 클라이언트 코드**를 포함합니다.
-요청하신 값으로 이미 환경설정이 채워져 있으니 바로 실행할 수 있습니다.
 
 - DB: `mysql+pymysql://admin:hanium2025@my-hanium-db.ct8466ykusoj.ap-southeast-2.rds.amazonaws.com:3306/cat_feeder`
 - API_KEY: `hanium2025`
 - 서버 퍼블릭 IPv4: `3.27.174.25` → 기본 호스트 포트는 **8080** (컨테이너 8000)
 
-> ⚠️ 실무에서는 **.env를 공개 저장소에 커밋하지 마세요.** 여기서는 빠른 테스트를 위해 포함했습니다.
 
 ## 빠른 시작 (EC2, Docker)
 
