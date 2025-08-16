@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  api:
+    build: ./server
+    container_name: cat-feeder-api
+    restart: unless-stopped
+    env_file:
+      - ./server/.env
+    ports:
+      - "8080:8000"
+    networks:
+      - appnet
+
+networks:
+  appnet: {}
