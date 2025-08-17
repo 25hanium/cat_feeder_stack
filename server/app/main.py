@@ -14,6 +14,8 @@ load_dotenv()
 
 app = FastAPI(title="Cat Feeder API")
 
+app.include_router(feeding.router, prefix="/api")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
